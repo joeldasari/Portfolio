@@ -1,0 +1,267 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <style>
+            body{
+                background-image: linear-gradient(50deg,gold,black,black,black,black,black);
+                color:white;
+            }
+            header,section,footer{
+                display:flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+           
+            nav{
+                display:flex;
+                justify-content:space-between;
+                width: 40vw;
+                font-size: 23px;
+                list-style: none;
+                padding-top:15px ;
+                padding-right: 40px;
+                min-width:200px;
+                flex-wrap: wrap;
+                font-weight: bold;
+                animation: fade-top 0.5s linear ;
+            }
+            #contact,#head,a{
+                display: inline-block;
+                width: 10vw;
+                align-self: center;
+                justify-self: center;
+                min-width:max-content;
+            }
+            #head{
+                animation: fade-left 0.5s linear ;
+            }
+            #contact{
+                animation: fade-right 0.5s linear ;
+            }
+           span{
+            color:goldenrod;
+            font-weight:bolder;
+            font-size: 70px;
+           }
+           button{
+            border:None;
+            padding: 18px;
+            border-radius: 15px;
+            color:white;
+            font-weight:bolder;
+            font-size: 18px;
+            background-color:gray;
+            padding-right: 29px;
+            margin:20px;
+           }
+           #body-1,#body-2{
+            min-width: 445px;
+           width :600px;
+           padding-left: 40px;
+           
+           } 
+           .gap{
+            margin-left: 100px;
+            font-size:20px;
+           }
+            img{
+                width:370px;
+                border-radius:400px;
+                position: absolute;
+                height:400px;
+                transform: rotateY(180deg);
+                margin-left: 59px;
+                margin-top: 59px;
+            }
+            #back{
+                border:30px solid goldenrod;
+                width:300px;
+                border-radius: 100%;
+                height: 300px;
+                margin: 65px;
+            }
+            #body-2{
+                align-self: center;
+                justify-self: center;
+                animation: fade-right 1s linear ;
+            }
+            #body-1{
+                animation: fade-left 1s linear ;
+                color:white;
+            }
+          a:hover{
+            color:whitesmoke;
+            font-weight: bold;
+          }
+          
+          button:hover{
+            border:None;
+            padding: 18px;
+            border-radius: 15px;
+            color:white;
+            font-weight:bolder;
+            font-size: 18px;
+            background-color:#000000;
+            padding-right: 29px;
+            margin:20px;
+           }
+           @keyframes fade-left {
+            from{
+                opacity: 0;
+                transform: translate3d(-50px, 0, 0); 
+            }
+            to{
+                opacity: 1;
+                transform: translate3d(0, 0, 0); 
+            }
+           }
+           @keyframes fade-right {
+            from{
+                opacity: 0;
+                transform: translate3d(50px, 0, 0); 
+            }
+            to{
+                opacity: 1;
+                transform: translate3d(0, 0, 0); 
+            }
+           }
+           @keyframes fade-top {
+            from{
+                opacity: 0;
+                transform: translate3d(0, -50px, 0); 
+            }
+            to{
+                opacity: 1;
+                transform: translate3d(0, 0, 0); 
+            }
+           }
+           li{
+            list-style: none;
+           }
+           a{
+            color:goldenrod;
+            text-decoration:none;
+           }
+           li::before{
+            color:goldenrod;
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+           }
+           #bar{
+            width:300px;
+           }
+           p{
+            font-size:1.5rem;
+            color:whitesmoke;
+           }
+           footer{
+            height: auto;
+            background-color: #242424;
+            font-size: 15px;
+            color:whitesmoke;
+            line-height: 0.8em;
+            margin-bottom: 0;
+           }
+           body,html{
+            margin:0;
+            border: 0;
+           }
+           hr{
+            color: goldenrod;
+            background-color: goldenrod;
+            border-color: goldenrod;
+           }
+        </style>
+    </head>
+    <body>
+       <header>
+        <h1 id="head">Portfolio<span>.</span></h1>
+        <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                
+        </nav>
+       </header>
+       <hr style="background-color: goldenrod;">
+       <main>
+        <section id="home">
+            <div id="body-1">
+                <span style="font-size:70px">____</span>
+                <h1 style="font-size:70px;font-weight:1000;">
+                    I'm Joel Dasari,<br>
+                    a <span>Developer</span>  
+                </h1>
+                <p style="font-size:1.5em;">
+                    Failure is an option here. If things are not failing, you are not innovating enough. -Elon Musk
+                </p>
+                
+            </div >
+            <div id="body-2">
+                <img src="img1.jpeg">
+                <div id="back">
+                    
+                </div>
+            </div>   
+        </section> 
+        <div id="about" class="gap">
+            <span style="font-size:70px">__</span>
+                <h1>About</h1>
+        </div>
+        <section style="font-size:22px">
+            
+            <div id="body-1">
+                
+                <p>Hardworking College student seeking employment. Bringing forth a motivated attitude and a variety of powerful skills. Committed to utilizing mu skills to further the mission of the Company. Ready to join my next team.</p>
+            </div>
+            <div id="body-2">
+                <ul><pre> <li>Name      <span style="font-size:30px">:</span> Joel Dasari </li>
+                    <li>Age       <span style="font-size:30px">:</span> 20 </li>
+           </pre>
+           </ul>
+            </div>
+        </section>
+        <div id="skills" class="gap">
+            <span style="font-size:70px">__</span>
+                <h1>Skills</h1>
+                <p>I'm self motivated , and I feel I'm good at time management. </p>
+        </div>
+        <section style="font-size:22px">
+            <div id="body-1">
+                <ul><pre>
+                    <li>Python       <span style="font-size:30px">:</span><progress id="bar" value="80" max="100"> 32% </progress></li>
+                    <li>C            <span style="font-size:30px">:</span><progress id="bar" value="90" max="100"> 32% </progress></li>
+                    <li>Java         <span style="font-size:30px">:</span><progress id="bar" value="50" max="100"> 32% </progress></li>
+                    <li>C++          <span style="font-size:30px">:</span><progress id="bar" value="50" max="100"> 32% </progress></li>
+                    <li>Linux        <span style="font-size:30px">:</span><progress id="bar" value="50" max="100"> 32% </progress></li>
+                </ul></pre>                       
+            </div>
+            <div id="body-2">
+                <ul><pre>
+                    <li>Html Css     <span style="font-size:30px">:</span><progress id="bar" value="90" max="100"> 32% </progress></li>
+                    <li>Java Script  <span style="font-size:30px">:</span><progress id="bar" value="60" max="100"> 32% </progress></li>
+                    <li>ReactJS      <span style="font-size:30px">:</span><progress id="bar" value="40" max="100"> 32% </progress></li>
+                </ul></pre>
+            </div>
+        </section>        
+       </main> 
+       <footer>
+        <div id="contact">
+        <ul >
+            <h1>Contact</h1>
+            <pre> 
+                <li>Phone No.  <span style="font-size:30px">:</span> 7670819765 </li>
+                <li>Email      <span style="font-size:30px">:</span> joeldasari10@gmail.com </li>
+                <li>LinkedIn   <span style="font-size:30px">:</span> https://www.linkedin.com/in/joel-dasari-707938251/</li>
+                <li>Github     <span style="font-size:30px">:</span> https://github.com/joeldasari </li>
+            </pre>
+        </ul>
+        </div>
+       </footer>
+    </body>
+</html>
